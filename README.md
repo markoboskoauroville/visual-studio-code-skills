@@ -11,3 +11,4 @@ repeatable rule, use `write-a-skill` to add or update it in this repository.
 - `macro-recorder-control` — controls the Mac through Macro Recorder (Mantra)
 - `terminal-control` — opens and uses a visible Terminal safely
 - `pixel-ltc-safety` — controls Pixel LTC and volume without leaving the harmful test sound running
+- `davinci-resolve-ltc-timecode` — imports LTC recordings and sets Resolve clip Start TC through the router
