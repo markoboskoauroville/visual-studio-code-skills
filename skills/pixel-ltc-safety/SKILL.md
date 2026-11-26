@@ -16,6 +16,7 @@ soon as the take or experiment ends.
 - Activity: `.MainActivity`
 - v2+ ADB control: boolean intent extra `ltc`
 - Recording reference: Webcam Recorder's selected microphone plus the phone's visible 25 fps timecode
+- TC LTC JAM v4 output: 0.12 amplitude (was 0.60), for the high-gain camera microphone
 
 ## Required start sequence
 
@@ -85,5 +86,7 @@ unless Marko explicitly chooses a new level. Never leave sound enabled to avoid 
 - 2026-11-26: direct ADB taps in rotated landscape hit the phone's volume control and lowered `STREAM_MUSIC` from
   25 to 1. Do not use guessed touchscreen coordinates for LTC.
 - 2026-11-26: TC LTC JAM v2 added an ADB intent because coordinate tapping was unreliable and unsafe.
+- 2026-11-26: Android reported that `cmd media_session volume --set` ran but retained the device-policy speaker
+  index. The reliable signal-level control is TC LTC JAM's own waveform amplitude; v4 reduces it from 0.60 to 0.12.
 - 2026-11-26: LTC was restored to `25`, one test take was recorded, then the package was force-stopped and reopened
   without the extra. The final screenshot confirmed `AUDIO LTC OUT: OFF`.

@@ -13,3 +13,4 @@ repeatable rule, use `write-a-skill` to add or update it in this repository.
 - `pixel-ltc-safety` — controls Pixel LTC and volume without leaving the harmful test sound running
 - `davinci-resolve-ltc-timecode` — imports LTC recordings and sets Resolve clip Start TC through the router
 - `public-build-repositories` — safely defaults GitHub Actions build repositories to public when free minutes matter
+- `webcam-recorder-resolve-benchmark` — reproduces and compares Webcam Recorder and Resolve waveform alignment
