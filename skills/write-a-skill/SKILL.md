@@ -59,3 +59,4 @@ cheaply from the code.
 
 - 2026-11-26: Marko requested this repository and the meta-skill after repeated learning about Macro Recorder,
   visible Terminal control, and Pixel LTC.
+- 2026-11-26: Every skill update must be committed and pushed in the same completed session.
